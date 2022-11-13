@@ -289,7 +289,7 @@
 	};
 
 	// Document on load.
-	$(function () {
+	window.addEventListener('load', ()=>{
 		fullHeight();
 		counter();
 		counterWayPoint();
@@ -297,11 +297,9 @@
 		burgerMenu();
 
 		clickMenu();
-		// navActive();
+		 navActive();
 		navigationSection();
 		// windowScroll();
-
-
 		mobileMenuOutsideClick();
 		sliderMain();
 		stickyFunction();
