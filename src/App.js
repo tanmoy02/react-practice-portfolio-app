@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Menu from './components/menu/Menu';
 function App() {
   return (
     <div id="colorlib-page">
@@ -8,26 +8,12 @@ function App() {
         <a href="#" className="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
         <aside id="colorlib-aside" role="complementary" className="border js-fullheight">
           <div className="text-center">
-            <div className="author-img" style={{backgroundImage: 'url("images/about.jpg")'}}></div>
+            <div className="author-img" style={{ backgroundImage: 'url("images/about.jpg")' }}></div>
             <h1 id="colorlib-logo"><a href="index.html">Jackson Ford</a></h1>
             <span className="position"><a href="#">UI/UX/Designer</a> in Philippines</span>
           </div>
-          <nav id="colorlib-main-menu" role="navigation" className="navbar">
-            <div id="navbar" className="collapse">
-              <ul>
-                <li className="active"><a href="#" data-nav-section="home">Home</a></li>
-                <li><a href="#" data-nav-section="about">About</a></li>
-                <li><a href="#" data-nav-section="services">Services</a></li>
-                <li><a href="#" data-nav-section="skills">Skills</a></li>
-                <li><a href="#" data-nav-section="education">Education</a></li>
-                <li><a href="#" data-nav-section="experience">Experience</a></li>
-                <li><a href="#" data-nav-section="work">Work</a></li>
-                <li><a href="#" data-nav-section="blog">Blog</a></li>
-                <li><a href="#" data-nav-section="contact">Contact</a></li>
-              </ul>
-            </div>
-          </nav>
 
+          <Menu></Menu>
           <div className="colorlib-footer">
             <p><small>&copy;
               Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i className="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
@@ -46,7 +32,7 @@ function App() {
           <section id="colorlib-hero" className="js-fullheight" data-section="home">
             <div className="flexslider js-fullheight">
               <ul className="slides">
-                <li style={{backgroundImage: 'url("images/img_bg_1.jpg")'}}>
+                <li style={{ backgroundImage: 'url("images/img_bg_1.jpg")' }}>
                   <div className="overlay"></div>
                   <div className="container-fluid">
                     <div className="row">
@@ -62,7 +48,7 @@ function App() {
                     </div>
                   </div>
                 </li>
-                <li style={{backgroundImage: 'url("images/img_bg_2.jpg")'}}>
+                <li style={{ backgroundImage: 'url("images/img_bg_2.jpg")' }}>
                   <div className="overlay"></div>
                   <div className="container-fluid">
                     <div className="row">
@@ -216,7 +202,7 @@ function App() {
             </div>
           </section>
 
-          <div id="colorlib-counter" className="colorlib-counters" style={{backgroundImage: 'url("images/cover_bg_1.jpg")'}} data-stellar-background-ratio="0.5">
+          <div id="colorlib-counter" className="colorlib-counters" style={{ backgroundImage: 'url("images/cover_bg_1.jpg")' }} data-stellar-background-ratio="0.5">
             <div className="overlay"></div>
             <div className="colorlib-narrow-content">
               <div className="row">
@@ -259,7 +245,7 @@ function App() {
                     <h3>Photoshop</h3>
                     <div className="progress">
                       <div className="progress-bar color-1" role="progressbar" aria-valuenow="75"
-                        aria-valuemin="0" aria-valuemax="100" style={{"width":"75%"}}>
+                        aria-valuemin="0" aria-valuemax="100" style={{ "width": "75%" }}>
                         <span>75%</span>
                       </div>
                     </div>
@@ -270,7 +256,7 @@ function App() {
                     <h3>jQuery</h3>
                     <div className="progress">
                       <div className="progress-bar color-2" role="progressbar" aria-valuenow="60"
-                        aria-valuemin="0" aria-valuemax="100" style={{"width":"60%"}}>
+                        aria-valuemin="0" aria-valuemax="100" style={{ "width": "60%" }}>
                         <span>60%</span>
                       </div>
                     </div>
@@ -281,7 +267,7 @@ function App() {
                     <h3>HTML5</h3>
                     <div className="progress">
                       <div className="progress-bar color-3" role="progressbar" aria-valuenow="85"
-                        aria-valuemin="0" aria-valuemax="100" style={{"width":"85%"}}>
+                        aria-valuemin="0" aria-valuemax="100" style={{ "width": "85%" }}>
                         <span>85%</span>
                       </div>
                     </div>
@@ -292,7 +278,7 @@ function App() {
                     <h3>CSS3</h3>
                     <div className="progress">
                       <div className="progress-bar color-4" role="progressbar" aria-valuenow="90"
-                        aria-valuemin="0" aria-valuemax="100" style={{"width":"90%"}}>
+                        aria-valuemin="0" aria-valuemax="100" style={{ "width": "90%" }}>
                         <span>90%</span>
                       </div>
                     </div>
@@ -303,7 +289,7 @@ function App() {
                     <h3>WordPress</h3>
                     <div className="progress">
                       <div className="progress-bar color-5" role="progressbar" aria-valuenow="70"
-                        aria-valuemin="0" aria-valuemax="100" style={{"width":"70%"}}>
+                        aria-valuemin="0" aria-valuemax="100" style={{ "width": "70%" }}>
                         <span>70%</span>
                       </div>
                     </div>
@@ -314,7 +300,7 @@ function App() {
                     <h3>SEO</h3>
                     <div className="progress">
                       <div className="progress-bar color-6" role="progressbar" aria-valuenow="80"
-                        aria-valuemin="0" aria-valuemax="100" style={{"width":"80%"}}>
+                        aria-valuemin="0" aria-valuemax="100" style={{ "width": "80%" }}>
                         <span>80%</span>
                       </div>
                     </div>
@@ -522,7 +508,7 @@ function App() {
               </div>
               <div className="row">
                 <div className="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-                  <div className="project" style={{backgroundImage: 'url("images/img_1.jpg")'}}>
+                  <div className="project" style={{ backgroundImage: 'url("images/img_1.jpg")' }}>
                     <div className="desc">
                       <div className="con">
                         <h3><a href="work.html">Work 01</a></h3>
@@ -537,7 +523,7 @@ function App() {
                   </div>
                 </div>
                 <div className="col-md-6 animate-box" data-animate-effect="fadeInRight">
-                  <div className="project" style={{backgroundImage: 'url("images/img-2.jpg")'}}>
+                  <div className="project" style={{ backgroundImage: 'url("images/img-2.jpg")' }}>
                     <div className="desc">
                       <div className="con">
                         <h3><a href="work.html">Work 02</a></h3>
@@ -552,7 +538,7 @@ function App() {
                   </div>
                 </div>
                 <div className="col-md-6 animate-box" data-animate-effect="fadeInTop">
-                  <div className="project" style={{backgroundImage: 'url("images/img-3.jpg")'}}>
+                  <div className="project" style={{ backgroundImage: 'url("images/img-3.jpg")' }}>
                     <div className="desc">
                       <div className="con">
                         <h3><a href="work.html">Work 03</a></h3>
@@ -567,7 +553,7 @@ function App() {
                   </div>
                 </div>
                 <div className="col-md-6 animate-box" data-animate-effect="fadeInBottom">
-                  <div className="project" style={{backgroundImage: 'url("images/img-4.jpg")'}}>
+                  <div className="project" style={{ backgroundImage: 'url("images/img-4.jpg")' }}>
                     <div className="desc">
                       <div className="con">
                         <h3><a href="work.html">Work 04</a></h3>
@@ -582,7 +568,7 @@ function App() {
                   </div>
                 </div>
                 <div className="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-                  <div className="project" style={{backgroundImage: 'url("images/img-5.jpg")'}}>
+                  <div className="project" style={{ backgroundImage: 'url("images/img-5.jpg")' }}>
                     <div className="desc">
                       <div className="con">
                         <h3><a href="work.html">Work 05</a></h3>
@@ -597,7 +583,7 @@ function App() {
                   </div>
                 </div>
                 <div className="col-md-6 animate-box" data-animate-effect="fadeInRight">
-                  <div className="project" style={{backgroundImage: 'url("images/img-6.jpg")'}}>
+                  <div className="project" style={{ backgroundImage: 'url("images/img-6.jpg")' }}>
                     <div className="desc">
                       <div className="con">
                         <h3><a href="work.html">Work 06</a></h3>
