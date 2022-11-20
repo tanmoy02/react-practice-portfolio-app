@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Innovative Ideas",
+    "text": "Separated they live in Bookmarksgrove right at the coast of the Semantics",
+    "icon": "icon-bulb",
+    "active": true
+  },
+  {
+    "title": "Software",
+    "text": "Separated they live in Bookmarksgrove right at the coast of the Semantics",
+    "icon": "icon-data",
+    "active": true
+  },
+  {
+    "title": "Application",
+    "text": "Separated they live in Bookmarksgrove right at the coast of the Semantics",
+    "icon": "icon-phone3",
+    "active": true
+  },
+  {
+    "title": "Graphic Design",
+    "text": "Separated they live in Bookmarksgrove right at the coast of the Semantics",
+    "icon": "icon-layers2",
+    "active": true
+  },
+  {
+    "title": "Database",
+    "text": "Separated they live in Bookmarksgrove right at the coast of the Semantics",
+    "icon": "icon-data",
+    "active": true
+  },
+  {
+    "title": "Application",
+    "text": "Separated they live in Bookmarksgrove right at the coast of the Semantics",
+    "icon": "icon-phone3",
+    "active": true
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Home",
+    "url": "",
+    "data-nav": "home"
+  },
+  {
+    "title": "About",
+    "url": "",
+    "data-nav": "about"
+  },
+  {
+    "title": "Services",
+    "url": "",
+    "data-nav": "services"
+  },
+  {
+    "title": "Skills",
+    "url": "",
+    "data-nav": "skills"
+  },
+  {
+    "title": "Education",
+    "url": "",
+    "data-nav": "education"
+  },
+  {
+    "title": "Experience",
+    "url": "",
+    "data-nav": "experience"
+  },
+  {
+    "title": "Work",
+    "url": "",
+    "data-nav": "work"
+  },
+  {
+    "title": "Blog",
+    "url": "",
+    "data-nav": "blog"
+  },
+  {
+    "title": "Contact",
+    "url": "",
+    "data-nav": "contact"
+  }
+]

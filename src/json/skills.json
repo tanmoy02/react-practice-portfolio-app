@@ -1,0 +1,32 @@
+[
+  {
+    "skillName": "Photoshop",
+    "skillLevel": 60,
+    "display": true
+  },
+  {
+    "skillName": "jQuery",
+    "skillLevel": 60,
+    "display": true
+  },
+  {
+    "skillName": "HTML5",
+    "skillLevel": 85,
+    "display": true
+  },
+  {
+    "skillName": "CSS3",
+    "skillLevel": 90,
+    "display": true
+  },
+  {
+    "skillName": "WordPress",
+    "skillLevel": 70,
+    "display": true
+  },
+  {
+    "skillName": "Javascript",
+    "skillLevel": 80,
+    "display": true
+  }
+]

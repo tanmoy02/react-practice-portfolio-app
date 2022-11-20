@@ -1,3 +1,6 @@
+// import ServicesData from "../../data/servicesData";
+import ServicesData from "../../json/services.json";
+
 function Services() {
   return (
     <section className="colorlib-services" data-section="services">
@@ -12,90 +15,23 @@ function Services() {
           </div>
         </div>
         <div className="row row-pt-md">
-          <div className="col-md-4 text-center animate-box">
-            <div className="services color-1">
-              <span className="icon">
-                <i className="icon-bulb"></i>
-              </span>
-              <div className="desc">
-                <h3>Innovative Ideas</h3>
-                <p>
-                  Separated they live in Bookmarksgrove right at the coast of
-                  the Semantics
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 text-center animate-box">
-            <div className="services color-2">
-              <span className="icon">
-                <i className="icon-data"></i>
-              </span>
-              <div className="desc">
-                <h3>Software</h3>
-                <p>
-                  Separated they live in Bookmarksgrove right at the coast of
-                  the Semantics
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 text-center animate-box">
-            <div className="services color-3">
-              <span className="icon">
-                <i className="icon-phone3"></i>
-              </span>
-              <div className="desc">
-                <h3>Application</h3>
-                <p>
-                  Separated they live in Bookmarksgrove right at the coast of
-                  the Semantics
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 text-center animate-box">
-            <div className="services color-4">
-              <span className="icon">
-                <i className="icon-layers2"></i>
-              </span>
-              <div className="desc">
-                <h3>Graphic Design</h3>
-                <p>
-                  Separated they live in Bookmarksgrove right at the coast of
-                  the Semantics
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 text-center animate-box">
-            <div className="services color-5">
-              <span className="icon">
-                <i className="icon-data"></i>
-              </span>
-              <div className="desc">
-                <h3>Software</h3>
-                <p>
-                  Separated they live in Bookmarksgrove right at the coast of
-                  the Semantics
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 text-center animate-box">
-            <div className="services color-6">
-              <span className="icon">
-                <i className="icon-phone3"></i>
-              </span>
-              <div className="desc">
-                <h3>Application</h3>
-                <p>
-                  Separated they live in Bookmarksgrove right at the coast of
-                  the Semantics
-                </p>
-              </div>
-            </div>
-          </div>
+          {ServicesData.map((service, index) => {
+            if (service.active) {
+              return (
+                <div className="col-md-4 text-center animate-box">
+                  <div className={"services color-" + (index + 1)}>
+                    <span className="icon">
+                      <i className={service.icon}></i>
+                    </span>
+                    <div className="desc">
+                      <h3>{service.title}</h3>
+                      <p>{service.text}</p>
+                    </div>
+                  </div>
+                </div>
+              );
+            }
+          })}
         </div>
       </div>
     </section>
